@@ -8,24 +8,60 @@ document.getElementById("torqueInput").addEventListener("keyup", function(event)
 function calculateInterpolation() {
   // Check the current date
   const currentDate = new Date();
-  const cutoffDate = new Date('2024-04-19');
+  const cutoffDate = new Date('2025-05-02');
 
   // Check if the current date is beyond the cutoff date
   if (currentDate > cutoffDate) {
     document.getElementById("result").innerText = 'Interpolated value (in PSI):';
     document.getElementById("roundedResult").innerText = 'Rounded Off Interpolated value (in PSI):';
-    document.getElementById("error").innerText = 'Error: Data entry not allowed after 19 April 2024';
+    document.getElementById("error").innerText = 'Error: Data entry not allowed after 05 May 2025';
     document.getElementById("torqueValue").innerText = 'Torque value (in Nm): ';
     return;
   }
 
   // Given data points
   const dataPoints = [
-    { x: 4031.8, y: 16 },
-    { x: 8040.0, y: 32 },
-    { x: 11978.4, y: 49 },
-    { x: 16024.6, y: 69 },
-    { x: 20187.4, y: 85 }
+    { x: 4400, y: 20 },
+    { x: 4790, y: 21.6 },
+    { x: 5180, y: 23.2 },
+    { x: 5570, y: 24.8 },
+    { x: 5960, y: 26.4 },
+    { x: 6350, y: 28.0 },
+    { x: 6740, y: 29.6 },
+    { x: 7130, y: 31.2 },
+    { x: 7520, y: 32.8 },
+    { x: 7910, y: 34.4 },
+    { x: 8300, y: 36.0 },
+    { x: 8690, y: 37.6 },
+    { x: 9080, y: 39.2 },
+    { x: 9470, y: 40.8 },
+    { x: 9860, y: 42.4 },
+    { x: 10250, y: 44.0 },
+    { x: 10640, y: 45.6 },
+    { x: 11030, y: 47.2 },
+    { x: 11420, y: 48.8 },
+    { x: 11810, y: 50.4 },
+    { x: 12200, y: 52.0 },
+    { x: 12590, y: 53.9 },
+    { x: 12980, y: 55.8 },
+    { x: 13370, y: 57.7 },
+    { x: 13760, y: 59.6 },
+    { x: 14150, y: 61.5 },
+    { x: 14540, y: 63.4 },
+    { x: 14930, y: 65.3 },
+    { x: 15320, y: 67.2 },
+    { x: 15710, y: 69.1 },
+    { x: 16100, y: 71.0 },
+    { x: 16490, y: 72.9 },
+    { x: 16880, y: 74.8 },
+    { x: 17270, y: 76.7 },
+    { x: 17660, y: 78.6 },
+    { x: 18050, y: 80.5 },
+    { x: 18440, y: 82.4 },
+    { x: 18830, y: 84.3 },
+    { x: 19220, y: 86.2 },
+    { x: 19610, y: 88.1 },
+    { x: 20000, y: 90.0 }
   ];
 
   // Get user input (Z)
