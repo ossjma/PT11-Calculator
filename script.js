@@ -21,7 +21,7 @@ function calculateInterpolation() {
 
   // Given data points
   const dataPoints = [
-    { x: 4400, y: 20 },
+    { x: 4400, y: 20.0 },
     { x: 4790, y: 21.6 },
     { x: 5180, y: 23.1 },
     { x: 5570, y: 24.7 },
@@ -108,4 +108,5 @@ function interpolate(x, x0, y0, x1, y1) {
 function roundToTwoDecimalPlaces(value) {
   return Math.round(value * 100) / 100;
 }
+
 
